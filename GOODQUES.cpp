@@ -4,20 +4,20 @@ int main(){
     int n;
     cin>>n;
     for(int i=1;i<=n;i++){
-
         for(int j=1;j<=n+1-i;j++){
             cout<<j;
         }
-
-                //spaces
-
+                //spaces        
         for(int l=1;l<=2*(i-1);l++){
             cout<<"*";
         }
-
         for(int k=n-i+1;k>=1;k--){
             cout<<k;
         }
         cout<<endl;
     } 
 }
+//if input = 3
+// output = 1 2 3 3 2 1 
+//          1 2 * * 2 1
+//          1 * * * * 1
